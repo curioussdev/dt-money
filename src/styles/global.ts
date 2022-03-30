@@ -40,6 +40,15 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased; // hack para melhor leitura de fontes nos browsers
     }
 
+    body, input, textarea, button { // por padrão o input, textarea, button não importam a fonte definida no body
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong {
+        font-weight: 600;
+    }
+
     button{
         cursor: pointer;
     }
