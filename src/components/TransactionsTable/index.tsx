@@ -5,7 +5,11 @@ import { Container } from "./style";
 
 export function TransactionsTable(){
 
-    useEffect()
+    useEffect(() =>{
+        fetch('http://localhost:3000/api/transactions')
+            .then(Response => Response.json())
+            .then(data=>console.log(data))
+    }, [])
     return(
         
         <Container>
