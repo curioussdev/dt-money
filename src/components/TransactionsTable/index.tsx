@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Container } from "./style";
 
+
+
 export function TransactionsTable(){
+
+    useEffect()
     return(
         
         <Container>
